@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{sigfox api client.}
   spec.description   = %q{use http party.}
-  spec.homepage      = "https://github/raj"
+  spec.homepage      = "https://github/raj/sigfox_client"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
