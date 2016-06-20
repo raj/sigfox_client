@@ -24,7 +24,7 @@ module SigfoxClient
       device_types_json = JSON.parse(res)['data']
       devicetypes = []
       device_types_json.each do |d|
-          devicetypes.push Devicetype.new(d)
+          devicetypes.push SigfoxClient::Devicetype.new(d)
       end
       devicetypes
     end
@@ -35,7 +35,7 @@ module SigfoxClient
       devices_json = JSON.parse(res)['data']
       devices = []
       devices_json.each do |d|
-        devices.push Device.new(d)
+        devices.push SigfoxClient::Device.new(d)
       end
       devices
     end
@@ -47,7 +47,7 @@ module SigfoxClient
       if JSON.parse(res)['data']
         messages_json = JSON.parse(res)['data']
         messages_json.each do |m|
-          messages.push Message.new(m)
+          messages.push SigfoxClient::Message.new(m)
         end
       end
       messages
