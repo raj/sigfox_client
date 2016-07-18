@@ -53,6 +53,11 @@ module SigfoxClient
       messages
     end
 
+
+    def get_raw_query(query)
+      return get_json(query)
+    end
+
     private
 
       def get_json(api_uri)
